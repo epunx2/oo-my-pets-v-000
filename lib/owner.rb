@@ -14,6 +14,12 @@ class Owner
     @pets[:fishes] << Fish.new(name)
   end
 
+  def feed_fish
+    @pets[:fishes].each do |fish|
+      fish.mood = "happy"
+    end
+  end
+
   def buy_cat(name)
     @pets[:cats] << Cat.new(name)
   end
