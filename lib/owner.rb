@@ -10,6 +10,10 @@ class Owner
     @@all << self
   end
 
+  def say_species
+    self.species
+  end
+
   def self.all
     @@all
   end
