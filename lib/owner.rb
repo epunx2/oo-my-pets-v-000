@@ -40,6 +40,14 @@ class Owner
     end
   end
 
+  def sell_pets
+    @pets.each do |type|
+      type.each do |pet|
+        pet.mood = "nervous"
+      end
+    end
+  end
+
   def say_species
     "I am a #{@species}."
   end
